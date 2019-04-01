@@ -81,17 +81,28 @@ table {
     And yes, there is a lot of repetition there because of -prefixes but we don't
     want to leave anybody behind.
 */
+#impress .step .substep {
+    opacity: 0;
+}
+
+#impress .step .substep.substep-visible {
+    opacity: 1;
+    transition: opacity 1s;
+}
 body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 
-    background: rgb(215, 215, 215);
+    	background: -moz-radial-gradient(50% 50%, farthest-side, #fff, #efefef);
+	background: -webkit-gradient(radial, 50% 50%, 250, 50% 50%, 750, from(#fff), to(#efefef));
+	
+    /* background: rgb(215, 215, 215);
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
     background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190)); */
 }
 
 /*
